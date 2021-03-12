@@ -1,0 +1,178 @@
+@font-face {
+    font-family: "CustomFont22";
+
+    src: url("/assets/fonts/Roboto.ttf") format("ttf")
+}
+
+
+
+#fly_content {
+    position: fixed;
+    z-index: 101;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 1px 30px;
+    top: 20vh;
+    font-family: Inconsolata, Calibri, Roboto, Arial;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 38px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #7D65FF;
+    background-color: #110D2A;
+}
+
+#fly_content2 {
+    color: white;
+    z-index: 333;
+    position: fixed;
+    font-family: "CustomFont22", Calibri, Roboto, Arial;
+    width: 250px;
+    height: 21px;
+    left: 27px;
+    bottom: 30px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 21px;
+    /* identical to box height */
+
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+
+#loading_cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    z-index: 9;
+    -webkit-transform: translatez(0);
+    -moz-transform: translatez(0);
+    -ms-transform: translatez(0);
+    -o-transform: translatez(0);
+    transform: translatez(0);
+}
+
+#loading_indicator {
+    position: absolute;
+    width: 355px;
+    height: 40px;
+    z-index: 10;
+    position: absolute;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    background-color: #555;
+}
+
+#loading_indicator .loading_bar {
+    position: absolute;
+    width: 0px;
+    height: 40px;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+#loading_indicator .loading_text {
+    position: absolute;
+    width: 355px;
+    height: 40px;
+    z-index: 12;
+    top: 60px;
+    left: 0;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    text-shadow: 0 0 5px #000;
+    font-style: italic;
+}
+
+
+
+body>canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    background-color:
+        black;
+    z-index: 2;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    font: 15px helvetica, arial,
+        sans-serif;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+.menu>span {
+    padding: 4px 1px;
+    font-size: 12px;
+    margin: 0 10;
+    border-radius: 3px;
+    background-color: rgba(17, 13, 42, 0.0009);
+    ;
+
+
+    font-family: Roboto, Arial;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+    text-transform: capitalize;
+
+    color: #7D65FF;
+
+}
+
+@media (max-width: 600px) {
+    .menu>span {
+        font-size: 2.5vw;
+        margin: 3px
+    }
+    svg {
+        width: 80px;
+    }
+}
+
+.menu-container {
+    height: 74px;
+    position: fixed;
+    z-index: 22;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(17, 13, 42, 0.990);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
